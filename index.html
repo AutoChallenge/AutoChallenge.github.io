@@ -128,6 +128,12 @@
     50% { transform: translateX(0%); }  /* Keeps text moving smoothly */
     100% { transform: translateX(-100%); }
 }
+/* For mobile devices, move ticker to the middle */
+@media screen and (max-width: 768px) {
+    .ticker-container {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     </style>
 </head>
